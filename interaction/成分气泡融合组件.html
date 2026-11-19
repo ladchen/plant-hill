@@ -34,6 +34,7 @@ img{max-width:100%;display:block}
 .tab.on em{color:#3d2e12}
 
 .bubble-stage{position:relative;max-width:680px;margin:0 auto;height:min(125vw,620px);min-height:480px;
+  touch-action:pan-y;user-select:none;-webkit-user-select:none;
   background:radial-gradient(50% 46% at 50% 50%,rgba(217,180,106,.08),transparent 70%),
              linear-gradient(170deg,rgba(25,20,9,.5),rgba(13,11,8,.2));
   border:1px solid var(--line-d);border-radius:24px;box-shadow:inset 0 0 60px rgba(217,180,106,.04)}
@@ -51,9 +52,11 @@ img{max-width:100%;display:block}
   background:radial-gradient(60% 60% at 32% 26%,rgba(233,210,160,.3),rgba(34,25,7,.92));
   box-shadow:0 6px 18px -6px rgba(0,0,0,.6),inset 0 0 14px rgba(217,180,106,.12);
   transition:left .7s cubic-bezier(.5,-.1,.6,1),top .7s cubic-bezier(.5,-.1,.6,1),transform .7s,opacity .6s,border-color .3s;
-  animation:bfloat 3.4s ease-in-out infinite;padding:2px}
+  animation:bfloat 3.4s ease-in-out infinite;padding:2px;
+  -webkit-user-drag:none;user-drag:none;user-select:none;-webkit-user-select:none;
+  -webkit-touch-callout:none;touch-action:manipulation}
 .bubble::after{content:"";position:absolute;inset:4px;border-radius:50%;border:1px dashed rgba(217,180,106,.3);pointer-events:none}
-.bubble img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block}
+.bubble img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;-webkit-user-drag:none;user-drag:none;pointer-events:none}
 .bubble span{font-family:var(--serif);font-size:12.5px;color:var(--ink-d);padding:0 5px;z-index:1;text-align:center;line-height:1.35}
 .bubble.small span{font-size:10.5px}
 .bubble .lbl{position:absolute;top:calc(100% + 5px);left:50%;transform:translateX(-50%);font-size:10px;letter-spacing:.04em;
@@ -80,6 +83,7 @@ img{max-width:100%;display:block}
 .foot{text-align:center;font-size:11px;color:var(--dim-d);letter-spacing:.1em;margin-top:40px}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 .embed{min-height:auto;background:#0d0b08}
+.embed, .embed body{overflow:hidden!important;overscroll-behavior:none}
 .embed .wrap{max-width:760px;padding:24px 18px 26px}
 .embed .sec-head{margin-bottom:24px}
 .embed .tabs{display:none}

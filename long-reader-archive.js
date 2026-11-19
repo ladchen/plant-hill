@@ -3,15 +3,19 @@ const productMeta = {
     label: "RG2 / 人参组培不定根固体饮料",
     totalHeight: 20789,
     files: [
-      { src: "assets/long/rg2-01.webp", width: 790, height: 10395, alt: "人参组培不定根固体饮料长图上半部分" },
-      { src: "assets/long/rg2-02.webp", width: 790, height: 10394, alt: "人参组培不定根固体饮料长图下半部分" }
+      { src: "assets/long/rg2-01.webp", width: 790, height: 5198, alt: "人参组培不定根固体饮料长图第1段" },
+      { src: "assets/long/rg2-02.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第2段" },
+      { src: "assets/long/rg2-03.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第3段" },
+      { src: "assets/long/rg2-04.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第4段" }
     ]
   },
   lushen: {
     label: "鹿肾丸 / 人参组培不定根鹿肾丸",
     totalHeight: 11874,
     files: [
-      { src: "assets/long/lushen-complete.webp", width: 790, height: 11874, alt: "人参组培不定根鹿肾丸完整长图" }
+      { src: "assets/long/lushen-01.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第1段" },
+      { src: "assets/long/lushen-02.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第2段" },
+      { src: "assets/long/lushen-03.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第3段" }
     ]
   }
 };
