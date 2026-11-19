@@ -5,10 +5,10 @@ const productMeta = {
     reportCount: 4,
     theme: "#0b2018",
     files: [
-      { src: "assets/long/rg2-01.webp", width: 790, height: 5198, alt: "人参组培不定根固体饮料长图第1段" },
-      { src: "assets/long/rg2-02.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第2段" },
-      { src: "assets/long/rg2-03.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第3段" },
-      { src: "assets/long/rg2-04.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第4段" }
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/rg2-01.webp", width: 790, height: 5198, alt: "人参组培不定根固体饮料长图第1段" },
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/rg2-02.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第2段" },
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/rg2-03.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第3段" },
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/rg2-04.webp", width: 790, height: 5197, alt: "人参组培不定根固体饮料长图第4段" }
     ]
   },
   lushen: {
@@ -17,9 +17,9 @@ const productMeta = {
     reportCount: 3,
     theme: "#1b0e11",
     files: [
-      { src: "assets/long/lushen-01.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第1段" },
-      { src: "assets/long/lushen-02.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第2段" },
-      { src: "assets/long/lushen-03.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第3段" }
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/lushen-01.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第1段" },
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/lushen-02.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第2段" },
+      { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/long/lushen-03.webp", width: 790, height: 3958, alt: "人参组培不定根鹿肾丸长图第3段" }
     ]
   }
 };
@@ -495,7 +495,8 @@ window.addEventListener("keydown", (event) => {
 });
 
 window.addEventListener("message", (event) => {
-  if (event.origin !== location.origin || event.data?.type !== "fusion-height") return;
+  const _allowed = new Set([location.origin, "https://cdn.jsdelivr.net"]);
+  if (!_allowed.has(event.origin) || event.data?.type !== "fusion-height") return;
   document.querySelectorAll("[data-fusion-embed]").forEach((frame) => {
     if (frame.contentWindow === event.source) {
       frame.style.height = `${Math.max(620, Number(event.data.height) || 620)}px`;
