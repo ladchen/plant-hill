@@ -4,13 +4,13 @@ const finePointer = window.matchMedia("(pointer: fine)").matches;
 
 const products = {
   rg2: {
-    image: "assets/products/rg2-cutout.webp",
+    image: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/products/rg2-cutout.webp",
     alt: "人参组培不定根固体饮料真实包装",
     kicker: "RG2 · 人参组培不定根固体饮料",
     note: "净含量 30g（1g×30袋）"
   },
   lushen: {
-    image: "assets/products/lushen-cutout.webp",
+    image: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/products/lushen-cutout.webp",
     alt: "人参组培不定根鹿肾丸真实包装",
     kicker: "鹿肾丸 · 人参组培不定根鹿肾丸",
     note: "蜂产品制品 · 净含量 18g（6g×3）"
@@ -18,25 +18,25 @@ const products = {
 };
 
 const posterData = [
-  { src: "assets/posters/rg2-01.webp", type: "rg2", label: "产品封面 · RG2 植物干细胞", height: 2100 },
-  { src: "assets/posters/rg2-02.webp", type: "rg2", label: "五大核心优势", height: 1050 },
-  { src: "assets/posters/rg2-03.webp", type: "rg2", label: "植物干细胞技术", height: 1350 },
-  { src: "assets/posters/rg2-04.webp", type: "rg2", label: "植物干细胞技术五大特性", height: 650 },
-  { src: "assets/posters/rg2-05.webp", type: "rg2", label: "植物干细胞产品价值", height: 1950 },
-  { src: "assets/posters/rg2-06.webp", type: "rg2", label: "稀有人参皂苷", height: 1350 },
-  { src: "assets/posters/rg2-07.webp", type: "rg2", label: "高科技专利技术", height: 1330 },
-  { src: "assets/posters/rg2-08.webp", type: "rg2", label: "野山参干细胞", height: 870 },
-  { src: "assets/posters/rg2-09.webp", type: "rg2", label: "科学精准配比", height: 900 },
-  { src: "assets/posters/rg2-10.webp", type: "rg2", label: "高纯度 · 精准吸收", height: 1950 },
-  { src: "assets/posters/rg2-11.webp", type: "rg2", label: "功效评价与认证证书", height: 4920 },
-  { src: "assets/posters/rg2-12.webp", type: "rg2", label: "世界冠军代言 · 产品信息", height: 2369 },
-  { src: "assets/posters/lushen-01.webp", type: "lushen", label: "产品封面 · 鹿肾丸", height: 1200 },
-  { src: "assets/posters/lushen-02.webp", type: "lushen", label: "五大优势", height: 900 },
-  { src: "assets/posters/lushen-03.webp", type: "lushen", label: "植物干细胞技术", height: 1500 },
-  { src: "assets/posters/lushen-04.webp", type: "lushen", label: "生物学特征五大特性", height: 1400 },
-  { src: "assets/posters/lushen-05.webp", type: "lushen", label: "严苛标准 · 标准量产", height: 700 },
-  { src: "assets/posters/lushen-06.webp", type: "lushen", label: "精选原料图鉴", height: 2770 },
-  { src: "assets/posters/lushen-07.webp", type: "lushen", label: "产品展示 · 产品信息", height: 3404 }
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-01.webp", type: "rg2", label: "产品封面 · RG2 植物干细胞", height: 2100 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-02.webp", type: "rg2", label: "五大核心优势", height: 1050 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-03.webp", type: "rg2", label: "植物干细胞技术", height: 1350 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-04.webp", type: "rg2", label: "植物干细胞技术五大特性", height: 650 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-05.webp", type: "rg2", label: "植物干细胞产品价值", height: 1950 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-06.webp", type: "rg2", label: "稀有人参皂苷", height: 1350 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-07.webp", type: "rg2", label: "高科技专利技术", height: 1330 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-08.webp", type: "rg2", label: "野山参干细胞", height: 870 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-09.webp", type: "rg2", label: "科学精准配比", height: 900 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-10.webp", type: "rg2", label: "高纯度 · 精准吸收", height: 1950 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-11.webp", type: "rg2", label: "功效评价与认证证书", height: 4920 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/rg2-12.webp", type: "rg2", label: "世界冠军代言 · 产品信息", height: 2369 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-01.webp", type: "lushen", label: "产品封面 · 鹿肾丸", height: 1200 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-02.webp", type: "lushen", label: "五大优势", height: 900 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-03.webp", type: "lushen", label: "植物干细胞技术", height: 1500 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-04.webp", type: "lushen", label: "生物学特征五大特性", height: 1400 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-05.webp", type: "lushen", label: "严苛标准 · 标准量产", height: 700 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-06.webp", type: "lushen", label: "精选原料图鉴", height: 2770 },
+  { src: "https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/posters/lushen-07.webp", type: "lushen", label: "产品展示 · 产品信息", height: 3404 }
 ];
 
 const toast = document.querySelector(".toast");
@@ -282,7 +282,7 @@ function flyIngredient(button, index) {
   clone.style.width = `${sourceRect.width}px`;
   clone.style.height = `${sourceRect.height}px`;
   clone.style.borderRadius = "50%";
-  clone.style.backgroundImage = `url("assets/ingredients/group-${index + 1}.webp")`;
+  clone.style.backgroundImage = `url("https://cdn.jsdelivr.net/gh/ladchen/plant-hill@latest/assets/ingredients/group-${index + 1}.webp")`;
   clone.style.backgroundPosition = "center";
   clone.style.backgroundSize = "220%";
   clone.style.border = "1px solid rgba(245, 223, 174, .8)";
