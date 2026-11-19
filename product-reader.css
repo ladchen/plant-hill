@@ -102,16 +102,16 @@ svg {
   background: rgba(255, 253, 248, 0.42);
 }
 .product-jump button {
-  min-height: 36px;
+  min-height: 44px;
   padding: 0 16px;
   border: 0;
   background: transparent;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 22px;
   cursor: pointer;
   transition: background-color 180ms ease, color 180ms ease;
 }
-.product-jump button span { margin-right: 7px; color: var(--red); font-family: var(--en); font-size: 8px; }
+.product-jump button span { margin-right: 7px; color: var(--red); font-family: var(--en); font-size: 16px; }
 .product-jump button.is-active { background: var(--ink); color: var(--white); }
 
 .report-jump {
@@ -876,7 +876,7 @@ footer > a { display: inline-flex; min-height: 44px; align-items: center; justif
   .brand > span:last-child { display: none; }
   .brand-mark { width: 31px; height: 31px; font-size: 15px; }
   .product-jump { grid-column: 2; grid-row: 1; width: 100%; min-height: 46px; margin: 0; padding: 2px; }
-  .product-jump button { min-width: 0; min-height: 44px; gap: 2px; padding-inline: 6px; font-size: 9px; }
+  .product-jump button { min-width: 0; min-height: 44px; gap: 2px; padding-inline: 6px; font-size: 18px; }
   .product-jump button span { margin-right: 4px; }
   .report-jump { grid-column: 3; grid-row: 1; width: 44px; min-height: 44px; justify-content: center; gap: 0; overflow: hidden; font-size: 0; }
   .report-jump small { display: none; }
