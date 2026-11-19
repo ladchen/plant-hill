@@ -1,12 +1,12 @@
 const nightProducts = {
   rg2: {
-    image: "assets/products/rg2-cutout.png",
+    image: "assets/products/rg2-cutout.webp",
     alt: "人参组培不定根固体饮料真实包装",
     name: "人参组培不定根固体饮料",
     spec: "净含量 30g（1g×30袋）"
   },
   lushen: {
-    image: "assets/products/lushen-cutout.png",
+    image: "assets/products/lushen-cutout.webp",
     alt: "人参组培不定根鹿肾丸真实包装",
     name: "人参组培不定根鹿肾丸",
     spec: "蜂产品制品 · 净含量 18g（1g×30袋）"

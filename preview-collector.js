@@ -1,6 +1,6 @@
 const collectorProducts = {
   rg2: {
-    image: "assets/products/rg2-cutout.png",
+    image: "assets/products/rg2-cutout.webp",
     alt: "人参组培不定根固体饮料包装",
     index: "01",
     code: "PH · RG2 / 30G",
@@ -10,7 +10,7 @@ const collectorProducts = {
     note: "真实包装主图 · 原始信息未改写 · 点击“启封藏品”查看完整呈现"
   },
   lushen: {
-    image: "assets/products/lushen-cutout.png",
+    image: "assets/products/lushen-cutout.webp",
     alt: "人参组培不定根鹿肾丸包装",
     index: "02",
     code: "PH · LUSHEN / 18G",
